@@ -7,7 +7,28 @@
 </head>
 <body>
     <script>
+        // Function declaration
+        function greetDeclaration(name) {
+            return `Привет ${name}!`;
+        }
 
+        // Function expression
+        const greetExpression = function(name) {
+            return `Привет ${name}!`;
+        };
+
+        // Arrow function
+        const greetArrowConcise = name => `Привет ${name}!`;
+
+        // Arrow function
+        const greetArrowBlock = name => {
+            return `Привет ${name}!`;
+        };
+
+        console.log(greetDeclaration('Alex'));
+        console.log(greetExpression('Alex'));
+        console.log(greetArrowConcise('Alex'));
+        console.log(greetArrowBlock('Alex'));
     </script>
 </body>
 </html>

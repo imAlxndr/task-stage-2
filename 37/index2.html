@@ -7,9 +7,25 @@
 </head>
 <body>
     <script>
-        function season() {
-
+         function season(month) {
+            if (month < 1 || month > 12) {
+                return 'Некорректный номер месяца';
+            }
+            if (month === 12 || month === 1 || month === 2) {
+                return 'зима';
+            } else if (month >= 3 && month <= 5) {
+                return 'весна';
+            } else if (month >= 6 && month <= 8) {
+                return 'лето';
+            } else {
+                return 'осень';
+            }
         }
+
+        console.log(season(1)); 
+        console.log(season(5)); 
+        console.log(season(8)); 
+        console.log(season(11)); 
     </script>
 </body>
 </html>

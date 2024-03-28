@@ -7,9 +7,13 @@
 </head>
 <body>
     <script>
-        function statsArray() {
-
+        function statsArray(...args) {
+            console.log(`Длина: ${args.length}`);
+            console.log(`Максимальный элемент: ${Math.max(...args)}`);
+            console.log(`Минимальный элемент: ${Math.min(...args)}`);
         }
+
+        statsArray(1, 2, 3);
     </script>
 </body>
 </html>
