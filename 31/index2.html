@@ -7,13 +7,15 @@
 </head>
 <body>
     <script>
+        // const text = 'Всем привет, пока, до свидания!';
+        // const word = 'до';
         const text = prompt('Введите текст');
         const word = prompt('Введите слово из текста');
-        // const index = '';
+        const index = text.indexOf(word);
+        const result = text.slice(0, index);
 
-        const result = ''
-
-        alert(result);
+        console.log(result);
+        alert(result)
     </script>
 </body>
 </html>
