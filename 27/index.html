@@ -4,6 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Задание 27</title>
+    <script>
+        var firstName = "Vlad";
+        console.log(firstName); // Выводит Vlad
+        
+        // Переопределяем переменную
+        firstName = "Oleg"; 
+        console.log(firstName); // Выводит Oleg
+
+        const age = 30;
+        console.log(age); // Выводит 30
+
+        // Изменяем значение переменной firstName
+        firstName = 42; // Теперь firstName - это число
+        console.log(firstName); // Выводит 42
+
+        // Пытаемся изменить значение в переменной age
+        try {
+            age = 31; // Приведет к ошибке, так как age объявлена через const
+        } catch (e) {
+            console.log(e); // Выводит TypeError: Assignment to constant variable.
+        }
+    </script>
 </head>
 <body>
     <script>
