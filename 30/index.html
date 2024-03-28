@@ -8,7 +8,13 @@
 <body>
     <script>
         const text = 'всеМ прИвЕт, прИяТно ПоЗНакоМиТьсЯ!';
+        let modifiedText = text.toLowerCase();
+        modifiedText = modifiedText.replace('привет', 'пока');
+        modifiedText = modifiedText.charAt(0).toUpperCase() + modifiedText.slice(1);
 
+        console.log(modifiedText); // Вывод измененной строки
+        console.log(modifiedText.length); // Вывод количества символов
+        console.log(modifiedText.charAt(modifiedText.length - 1)); // Вывод последнего символа
     </script>
 </body>
 </html>
