@@ -10,9 +10,20 @@
         const value1 = "25.3";
         const value2 = "786.867";
 
+        const sum = Number(value1) + Number(value2);
 
-        const result = '';
+        // Округляем сумму в большую сторону
+        const roundedSum = Math.ceil(sum);
 
+        // Форматируем число как валюту
+        const formatter = new Intl.NumberFormat('ru-RU', {
+            style: 'currency',
+            currency: 'RUB',
+            minimumFractionDigits: 0
+        });
+        const formattedResult = formatter.format(roundedSum);
+
+        console.log(formattedResult);
 
     </script>
 </body>
