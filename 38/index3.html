@@ -7,7 +7,16 @@
 </head>
 <body>
     <script>
+        function calculate(x) {
+            return function(y) {
+                return function(z) {
+                    return x + y + z;
+                };
+            };
+        }
 
+        const sum = calculate(1)(2)(3);
+        console.log(sum);
     </script>
 </body>
 </html>
