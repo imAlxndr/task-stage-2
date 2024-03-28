@@ -7,10 +7,34 @@
 </head>
 <body>
     <script>
-        const age = 10
-        console.log(typeof age)
+        // Примитивные значения
+        const undefinedValue = undefined;
+        const nullValue = null;
+        const booleanValue = true;
+        const numberValue = 42;
+        const bigIntValue = 123n;
+        const symbolValue = Symbol('unique');
+        const stringValue = "Hello";
 
+        // Объекты
+        const objectValue = { name: 'Alex' };
+        const arrayValue = [1, 2, 3];
+        const functionValue = function() { console.log('Function called'); };
+        const dateValue = new Date();
 
+        // Вывод типов в консоль
+        console.log(typeof undefinedValue);
+        console.log(typeof nullValue);
+        console.log(typeof booleanValue);
+        console.log(typeof numberValue);
+        console.log(typeof bigIntValue);
+        console.log(typeof symbolValue);
+        console.log(typeof stringValue);
+
+        console.log(typeof objectValue);
+        console.log(typeof arrayValue); 
+        console.log(typeof functionValue); 
+        console.log(typeof dateValue); 
     </script>
 </body>
 </html>
