@@ -9,6 +9,18 @@
     <script>
         const fructs = ['Банан', 'Арбуз', 'Яблоко', 'Виноград', 'Груша'];
 
+        // Удаление 'Яблоко' из массива
+        const appleIndex = fructs.indexOf('Яблоко');
+        if (appleIndex !== -1) {
+            fructs.splice(appleIndex, 1);
+        }
+
+        // Удаление первого элемента из массива
+        fructs.shift();
+
+        // Удаление последнего элемента из массива
+        fructs.pop();
+
         console.log(fructs)
     </script>
 </body>
