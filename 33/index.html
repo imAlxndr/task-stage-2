@@ -7,8 +7,23 @@
 </head>
 <body>
     <script>
-        const age = 10
-        console.log('age: ', Number(age), Boolean(age), String(age));
+        // Примитивные значения
+        const undefinedValue = undefined;
+        const nullValue = null;
+        const booleanValue = true;
+        const numberValue = 42;
+        const bigIntValue = 123n;
+        const symbolValue = Symbol('unique');
+        const stringValue = "Hello";
+
+        // Приведение к числу, строке и булеву типу
+        console.log('undefinedValue: ', Number(undefinedValue), Boolean(undefinedValue), String(undefinedValue));
+        console.log('nullValue: ', Number(nullValue), Boolean(nullValue), String(nullValue));
+        console.log('booleanValue: ', Number(booleanValue), Boolean(booleanValue), String(booleanValue));
+        console.log('numberValue: ', Number(numberValue), Boolean(numberValue), String(numberValue));
+        console.log('bigIntValue: ', Number(bigIntValue), Boolean(bigIntValue), String(bigIntValue));
+        console.log('symbolValue: ', Boolean(symbolValue), String(symbolValue));
+        console.log('stringValue: ', Number(stringValue), Boolean(stringValue), String(stringValue));
     </script>
 </body>
 </html>
