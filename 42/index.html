@@ -25,21 +25,27 @@
             },
         ];
 
-        const objectItem = '';
+        const objectItem = listUsers[0];
 
         function changeObjectMutate(object) {
-
+            object.firstName = 'Эдуард';
+            return object;
         }
 
         function changeObjectImmutable(object) {
-
+            return { ...object, firstName: 'Эдуард' };
         }
 
-        console.log(changeObjectMutate(objectItem))
-        // console.log(changeObjectImmutable(objectItem))
+        // Мутируем объект и выводим результат
+        console.log(changeObjectMutate(objectItem));
+        console.log('После мутации:', objectItem);
+        console.log('Массив после мутации:', listUsers);
 
-        console.log(objectItem)
-        console.log(listUsers)
+        // Возвращаем новый объект и выводим результат
+        console.log(changeObjectImmutable(objectItem));
+        console.log('После неизменяемой функции:', objectItem);
+        console.log('Массив после неизменяемой функции:', listUsers);
+        
 
     </script>
 </body>
